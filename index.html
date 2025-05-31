@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Itaguí | Descubre los Tesoros de Nuestro municipio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <img src="itagui.jpg" alt="Itagüí Metaverso" class="hero-image">
+            <h1>Itagüí en el Metaverso</h1>
+            <p class="subtitle">Descubre los tesoros de nuestra ciudad a través de una experiencia digital inmersiva</p>
+            <a href="#lugares" class="btn btn-primary">Explorar Lugares</a>
+        </div>
+    </header>
+
+    <!-- Lugares Turísticos -->
+    <section id="lugares" class="places-section">
+        <div class="container">
+            <h2 class="section-title">Conoce los Lugares Emblemáticos</h2>
+            <p class="section-subtitle">Descubre lo que hace especial a cada rincón de Itagüí</p>
+            
+            <div class="places-grid">
+                <!-- Lugar 1 - Parque Principal -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="parquepp.pjg.jpg" alt="Parque Principal" class="place-image">
+                    </div>
+                    <h3>Parque Principal</h3>
+                    <p>El corazón palpitante de Itagüí, donde convergen historia, cultura y vida comunitaria.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-parque')">Haz clic para más información</button>
+                    <div id="info-parque" class="additional-info">
+                        <p><strong>Ubicación:</strong> Centro de Itagüí<br>
+                        <strong>Horario:</strong> 6AM - 10PM<br>
+                        <strong>Eventos:</strong> Ferias, conciertos y actividades culturales</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Lugar 2 - Casa de la Cultura -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="casacultural.jpg" alt="Casa de la Cultura" class="place-image">
+                    </div>
+                    <h3>Casa de la Cultura</h3>
+                    <p>Epicentro artístico de Itagüí, donde la creatividad fluye en cada taller y exposición.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-cultura')">Haz clic para más información</button>
+                    <div id="info-cultura" class="additional-info">
+                        <p><strong>Ubicación:</strong> Calle 51 #50-55<br>
+                        <strong>Horario:</strong> 8AM - 6PM<br>
+                        <strong>Actividades:</strong> Talleres artísticos, exposiciones</p>
+                    </div>
+                </div>
+
+                <!-- Lugar 3 - Acuaparque Ditaires -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="ditaires.jpg" alt="Acuaparque Ditaires" class="place-image">
+                    </div>
+                    <h3>Acuaparque Ditaires</h3>
+                    <p>Oasis de diversión y deporte, donde el agua y el verde se combinan para crear diversión.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-acuaparque')">Haz clic para más información</button>
+                    <div id="info-acuaparque" class="additional-info">
+                        <p><strong>Ubicación:</strong> Carrera 42 #45-25<br>
+                        <strong>Horario:</strong> 9AM - 5PM<br>
+                        <strong>Atracciones:</strong> Piscinas, zonas verdes</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Lugar 4 - Pico Manzanillo -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="manzanillo.jpg" alt="Pico Manzanillo" class="place-image">
+                    </div>
+                    <h3>Pico Manzanillo</h3>
+                    <p>Mirador natural con espectaculares vistas del Valle de Aburrá, ideal para conectar con la naturaleza.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-pico')">Haz clic para más información</button>
+                    <div id="info-pico" class="additional-info">
+                        <p><strong>Ubicación:</strong> Vereda Manzanillo<br>
+                        <strong>Horario:</strong> Todo el día<br>
+                        <strong>Actividades:</strong> Senderismo, fotografía</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Lugar 5 - Museo Garciliano Arcilla Vélez -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="museo.jpg" alt="Museo Garciliano" class="place-image">
+                    </div>
+                    <h3>Museo Garciliano Arcilla Vélez</h3>
+                    <p>Guardián de la memoria itagüiseña, donde cada exposición narra nuestra rica historia.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-museo')">Haz clic para más información</button>
+                    <div id="info-museo" class="additional-info">
+                        <p><strong>Ubicación:</strong> Calle 50 #50-10<br>
+                        <strong>Horario:</strong> 10AM - 5PM (Martes a Domingo)<br>
+                        <strong>Exposiciones:</strong> Historia local, arte</p>
+                       
+                    </div>
+                </div>
+
+                <!-- Lugar 6 - Parque del Artista -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="artista.jpg" alt="Parque del Artista" class="place-image">
+                    </div>
+                    <h3>Parque del Artista</h3>
+                    <p>Galería al aire libre donde el arte cobra vida entre esculturas y eventos culturales.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-artista')">Haz clic para más información</button>
+                    <div id="info-artista" class="additional-info">
+                        <p><strong>Ubicación:</strong> Carrera 50 #45-20<br>
+                        <strong>Horario:</strong> Todo el día<br>
+                        <strong>Eventos:</strong> Exposiciones artísticas</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Lugar 7 - La Montaña que Piensa -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="montañaquepiensa.jpg" alt="La Montaña que Piensa" class="place-image">
+                    </div>
+                    <h3>La Montaña que Piensa</h3>
+                    <p>Santuario natural que invita a la reflexión, con miradores que ofrecen panorámicas únicas.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-montaña')">Haz clic para más información</button>
+                    <div id="info-montaña" class="additional-info">
+                        <p><strong>Ubicación:</strong> Vereda La Cruz<br>
+                        <strong>Horario:</strong> Todo el día<br>
+                        <strong>Características:</strong> Miradores naturales</p>
+                        
+                    </div>
+                </div>
+
+                <!-- Lugar 8 - Parque Simón Bolívar -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="simonbolivar.jpg" alt="Parque Simón Bolívar" class="place-image">
+                    </div>
+                    <h3>Parque Simón Bolívar</h3>
+                    <p>Pulmón verde del municipio, testigo de encuentros ciudadanos y eventos culturales.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-bolivar')">Haz clic para más información</button>
+                    <div id="info-bolivar" class="additional-info">
+                        <p><strong>Ubicación:</strong> Carrera 48 #45-30<br>
+                        <strong>Horario:</strong> 6AM - 8PM<br>
+                        <strong>Eventos:</strong> Ferias, actividades comunitarias</p>
+                       
+                    </div>
+                </div>
+
+                <!-- Lugar 9 - Parque de las Chimeneas -->
+                <div class="place-card">
+                    <div class="place-image-container">
+                        <img src="chimeneas.jpg" alt="Parque de las Chimeneas" class="place-image">
+                    </div>
+                    <h3>Parque de las Chimeneas</h3>
+                    <p>Monumento vivo a nuestro pasado industrial, transformado en espacio cultural.</p>
+                    <button class="btn btn-info" onclick="toggleInfo('info-chimeneas')">Haz clic para más información</button>
+                    <div id="info-chimeneas" class="additional-info">
+                        <p><strong>Ubicación:</strong> Carrera 49 #45-40<br>
+                        <strong>Horario:</strong> 8AM - 6PM<br>
+                        <strong>Eventos:</strong> Exposiciones culturales</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Metaverso -->
+    <section class="metaverso-section">
+        <div class="container">
+            <div class="metaverso-content">
+                <h2>Vive la Experiencia del Metaverso</h2>
+                <p>Explora Itagüí como nunca antes a través de nuestro mundo virtual inmersivo. Conoce la historia, cultura y secretos de la ciudad desde cualquier lugar del mundo.</p>
+                <a href="#" class="btn btn-primary">Acceder al Metaverso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Síguenos en redes sociales para más información</p>
+            
+            <div class="contact-methods">
+                <a href="https://wa.me/573244428226" class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="https://www.instagram.com/beyond_tours_4" class="contact-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-city"></i>
+                    <span>Itagüí Metaverso Turístico</span>
+                </div>
+                <p>Innovación turística para promover la identidad itagüiseña</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Itagüí Metaverso Turístico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
